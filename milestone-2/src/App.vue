@@ -9,7 +9,7 @@
 </template>
 
 <script>
-//import axios from "axios";
+import axios from "axios";
 import Header from "@/components/HeaderComponent.vue";
 import Main from "@/components/MainComponent.vue";
 
@@ -21,18 +21,19 @@ export default {
   },
   data() {
         return {
-            api_url: "https://flynn.boolean.careers/exercises/api/array/music",
+            //api_url: "https://flynn.boolean.careers/exercises/api/array/music",
+            php_url: 'http://localhost:8888/PHP/php-ajax-dischi/milestone-2/src/assets/php/db.php',
             albums: null,
             error: null
         };
   },
-  /* methods: {
+  methods: {
       callApi() {
           axios
-              .get(this.api_url)
+              .get(this.php_url)
               .then((response) => {
-                  //console.log(response);
-                  this.albums = response.data.response;
+                  console.log(response);
+                  this.albums = response.data;
                   //console.log(this.albums);
               })
               .catch((error) => {
@@ -44,7 +45,7 @@ export default {
   },
   mounted() {
       this.callApi();
-  }, */
+  },
 }
 
 </script>
