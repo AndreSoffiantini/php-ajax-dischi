@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 import Header from "@/components/HeaderComponent.vue";
 import Main from "@/components/MainComponent.vue";
 
@@ -26,7 +26,7 @@ export default {
             error: null
         };
   },
-  methods: {
+  /* methods: {
       callApi() {
           axios
               .get(this.api_url)
@@ -44,7 +44,7 @@ export default {
   },
   mounted() {
       this.callApi();
-  },
+  }, */
 }
 
 </script>
