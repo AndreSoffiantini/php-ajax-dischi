@@ -7,3 +7,13 @@ main {
     background-color: #1E2D3B;
     height: 94vh;
 }
+
+.album_card {
+    background-color: #2E3A46;
+    height: 100%;
+}
+
+.album_card>img {
+    height: 200px;
+    aspect-ratio: 1;
+}
